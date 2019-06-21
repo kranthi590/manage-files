@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Dashboard: Manage Files</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" href="/css/bootstrap.css" media="screen">
+<link rel="stylesheet" href="/css/custom.min.css">
+<link rel="stylesheet" href="/css/dropzone.css">
+<link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+	<div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+		<div class="container">
+			<a href="../" class="navbar-brand">Manage Files</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive" aria-controls="navbarResponsive"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav">
+					<li class="nav-item active"><a class="nav-link"
+						href="/upload-file">Upload Files</a></li>
+					<li class="nav-item"><a class="nav-link" href="/files">Files
+							List</a></li>
+				</ul>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-lg-2"></div>
+
+			<div class="col-lg-8">
+				<div class="form-group m-form__group row">
+					<div class="m-dropzone dropzone m-dropzone--success dz-clickable"
+						id="upload-payment-receipt-image" action="inc/api/dropzone/upload.php">
+						<div class="m-dropzone__msg dz-message needsclick">
+							<h3 class="m-dropzone__msg-title">Drop files here or click
+								to upload.</h3>
+							<span class="m-dropzone__msg-desc">Upload Receipt image</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2"></div>
+
+		</div>
+
+	</div>
+
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/dropzone.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/custom.js"></script>
+	<script src="/js/upload.js"></script>
+</body>
+</html>
